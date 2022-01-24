@@ -22,7 +22,7 @@ Made by [Ishaan Garg](https://twitter.com/allaboutishaan)
   - [Closing BlazeX](#closing-blazex)
   - [Switching between dark and light mode](#switching-between-dark-and-light-mode)
   - [List of commands](#list-of-commands)
-  - [Self-hosting BlazeX](#self-hosting-omni)
+  - [Self-hosting BlazeX](#self-hosting-blazex)
   - [Installing on Chrome](#installing-on-chrome)
   - [Libraries used](#libraries-used)
 
@@ -36,7 +36,7 @@ Made by [Ishaan Garg](https://twitter.com/allaboutishaan)
 
 ### Opening BlazeX
 
-To open Omni, simply press `⌘+Shift+K` on Mac or `Ctrl+Shift+K` on Windows. You can change the shortcut by going to chrome://extensions/shortcuts in Chrome.
+To open BlazeX, simply press `⌘+Shift+K` on Mac or `Ctrl+Shift+K` on Windows. You can change the shortcut by going to chrome://extensions/shortcuts in Chrome.
 
 Alternatively you can click on the extension icon in the toolbar to toggle it.
 
