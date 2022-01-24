@@ -40,13 +40,13 @@ To open BlazeX, simply press `⌘+Shift+K` on Mac or `Ctrl+Shift+K` on Windows. 
 
 Alternatively you can click on the extension icon in the toolbar to toggle it.
 
-### Closing Blazex
+### Closing BlazeX
 
 To close BlazeX you can press `Esc`, click on the background, or press the extension icon.
 
 ### Switching between dark and light mode
 
-The dark and light theme in Blazex is tied to your system's theme.
+The dark and light theme in BlazeX is tied to your system's theme.
 
 On Mac you can change the theme by clicking on the Apple menu (on the top left), opening the System preferences, going into the General section, and then choosing between dark, light, or auto.
 
@@ -66,8 +66,8 @@ You can use a variety of commands with BlazeX to perform actions or filter your 
 
 Feel free to suggest new commands for BlazeX by [making an issue](https://github.com/allaboutishaan/blazex/issues/new).
 
-## Self-hosting Blazex
-You can run Blazex locally without having to install it from the Chrome Store.
+## Self-hosting BlazeX
+You can run BlazeX locally without having to install it from the Chrome Store.
 
 ### Installing on Chrome
 
