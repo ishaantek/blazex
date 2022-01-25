@@ -6,13 +6,11 @@
 	"manifest_version": 3,
 	"action": {
 		"icons": {
-			"16": "assets/logo-16.png",
 			"48": "assets/logo-48.png",
 			"128": "assets/logo-128.png"
 		}
 	},
 	"icons": {
-		"16": "assets/logo-16.png",
 		"48": "assets/logo-48.png",
 		"128": "assets/logo-128.png"
 	},
