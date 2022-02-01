@@ -15,7 +15,7 @@
 		"128": "assets/logo-128.png"
 	},
 	"commands": {
-		"open-omni": {
+		"open-blazex": {
 			"suggested_key": {
 				"default": "Ctrl+Shift+K",
 				"mac": "Command+Shift+K"

@@ -120,7 +120,7 @@ const clearActions = () => {
 
 // Open on install
 chrome.runtime.onInstalled.addListener((object) => {
-  // Inject Omni on install
+  // Inject blazex on install
   const manifest = chrome.runtime.getManifest();
 
   const injectIntoTab = (tab) => {
@@ -172,15 +172,15 @@ chrome.runtime.onInstalled.addListener((object) => {
 
 // Check when the extension button is clicked
 chrome.action.onClicked.addListener((tab) => {
-	chrome.tabs.sendMessage(tab.id, {request: "open-omni"});
+	chrome.tabs.sendMessage(tab.id, {request: "open-blazex"});
 });
 
-// Listen for the open omni shortcut
+// Listen for the open blazex shortcut
 chrome.commands.onCommand.addListener((command) => {
-	if (command === "open-omni") {
+	if (command === "open-blazex") {
 		getCurrentTab().then((response) => {
 			if (!response.url.includes("chrome://") && !response.url.includes("chrome.google.com")) {
-				chrome.tabs.sendMessage(response.id, {request: "open-omni"});
+				chrome.tabs.sendMessage(response.id, {request: "open-blazex"});
 			} else {
 				chrome.tabs.create({
 					url: "./newtab.html" 
@@ -200,7 +200,7 @@ const getCurrentTab = async () => {
 	return tab;
 }
 
-// Restore the new tab page (workaround to show Omni in new tab page)
+// Restore the new tab page (workaround to show blazex in new tab page)
 function restoreNewTab() {
 	getCurrentTab().then((response) => {
 		chrome.tabs.create({
@@ -211,7 +211,7 @@ function restoreNewTab() {
 	})
 }
 
-const resetOmni = () => {
+const resetblazex = () => {
 	clearActions();
 	getTabs();
 	getBookmarks();
@@ -223,9 +223,9 @@ const resetOmni = () => {
 }
 
 // Check if tabs have changed and actions need to be fetched again
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => resetOmni());
-chrome.tabs.onCreated.addListener((tab) => resetOmni());
-chrome.tabs.onRemoved.addListener((tabId, changeInfo) => resetOmni());
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => resetblazex());
+chrome.tabs.onCreated.addListener((tab) => resetblazex());
+chrome.tabs.onRemoved.addListener((tabId, changeInfo) => resetblazex());
 
 // Get tabs to populate in the actions
 const getTabs = () => {
@@ -360,7 +360,7 @@ const removeBookmark = (bookmark) => {
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 	switch (message.request) {
 		case "get-actions":
-			resetOmni();
+			resetblazex();
 			sendResponse({actions: actions});
 			break;
 		case "switch-tab":
@@ -482,13 +482,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 		case "restore-new-tab":
 			restoreNewTab();
 			break;
-		case "close-omni":
+		case "close-blazex":
 			getCurrentTab().then((response) => {
-				chrome.tabs.sendMessage(response.id, {request: "close-omni"});
+				chrome.tabs.sendMessage(response.id, {request: "close-blazex"});
 			});
 			break;
 		}
 });
 
 // Get actions
-resetOmni();
+resetblazex();

@@ -1,31 +1,31 @@
 /* Scrollbar size */
-.omni-extension ::-webkit-scrollbar {
+.blazex-extension ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 
-.omni-extension ::-webkit-scrollbar-thumb {
+.blazex-extension ::-webkit-scrollbar-thumb {
   background-color: rgba(127, 127, 127, 0.6);
   background-clip: padding-box;
   border: 2px solid transparent;
   border-radius: 5px;
 }
 
-.omni-extension ::-webkit-scrollbar-thumb:vertical:hover,
-.omni-extension ::-webkit-scrollbar-thumb:horizontal:hover {
+.blazex-extension ::-webkit-scrollbar-thumb:vertical:hover,
+.blazex-extension ::-webkit-scrollbar-thumb:horizontal:hover {
   background-color: rgb(110, 110, 110);
 }
 
-.omni-extension ::-webkit-scrollbar-track {
+.blazex-extension ::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-.omni-extension ::-webkit-scrollbar-thumb:vertical:active,
-.omni-extension ::-webkit-scrollbar-thumb:horizontal:active {
+.blazex-extension ::-webkit-scrollbar-thumb:vertical:active,
+.blazex-extension ::-webkit-scrollbar-thumb:horizontal:active {
   background: rgba(95, 91, 91, 1);
 }
 
-.omni-extension ::-webkit-scrollbar-corner {
+.blazex-extension ::-webkit-scrollbar-corner {
   background: none;
 }
 
@@ -84,7 +84,7 @@
   font-weight: 700;
   src: url("chrome-extension://__MSG_@@extension_id__/assets/Inter-Bold.ttf");
 }
-.omni-extension * {
+.blazex-extension * {
   display: block;
   width: unset;
   box-shadow: unset;
@@ -93,14 +93,14 @@
   background-color: unset;
   border-radius: unset;
 }
-.omni-extension .omni-item-details * {
+.blazex-extension .blazex-item-details * {
   line-height: normal;
 }
-.omni-extension {
+.blazex-extension {
   font-family: Inter !important;
   z-index: 99999999999;
 }
-.omni-extension #omni-wrap {
+.blazex-extension #blazex-wrap {
   position: fixed;
   width: 700px;
   border: 1px solid transparent;
@@ -115,7 +115,7 @@
   transition: all 0.2s cubic-bezier(0.05, 0.03, 0.35, 1);
   pointer-events: all;
 }
-.omni-extension #omni {
+.blazex-extension #blazex {
   position: absolute;
   width: 100%;
   background: var(--background);
@@ -128,15 +128,15 @@
   transition: all 0.2s cubic-bezier(0.05, 0.03, 0.35, 1);
   display: block;
 }
-.omni-closing #omni {
+.blazex-closing #blazex {
   transform: scale(0.9);
   opacity: 0;
 }
-.omni-closing {
+.blazex-closing {
   pointer-events: none;
   display: none !important;
 }
-.omni-extension #omni-overlay {
+.blazex-extension #blazex-overlay {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -147,10 +147,10 @@
   opacity: 0.6;
   transition: all 0.1s cubic-bezier(0.05, 0.03, 0.35, 1);
 }
-.omni-closing #omni-overlay {
+.blazex-closing #blazex-overlay {
   opacity: 0 !important;
 }
-.omni-extension #omni-head {
+.blazex-extension #blazex-head {
   height: 50px;
   line-height: 50px;
   width: 95%;
@@ -158,22 +158,22 @@
   margin-right: auto;
   border-bottom: 1px solid var(--border);
 }
-.omni-extension #omni-name {
+.blazex-extension #blazex-name {
   color: var(--text);
   font-size: 12px;
   font-weight: 600;
   float: left;
 }
-.omni-extension #omni-close {
+.blazex-extension #blazex-close {
   color: var(--text-3);
   float: right;
   font-size: 12px;
   font-weight: 500;
 }
-.omni-extension #omni-close span {
+.blazex-extension #blazex-close span {
   margin-left: 3px;
 }
-.omni-extension .omni-shortcut {
+.blazex-extension .blazex-shortcut {
   display: inline-block !important;
   font-size: 13px;
   border-radius: 5px;
@@ -186,7 +186,7 @@
   padding-left: 3px;
   padding-right: 3px;
 }
-.omni-extension input {
+.blazex-extension input {
   background: transparent;
   border: 0px;
   outline: none;
@@ -207,17 +207,17 @@
   border: 0px;
   box-shadow: none;
 }
-.omni-extension ::placeholder {
+.blazex-extension ::placeholder {
   color: var(--placeholder);
   opacity: 1;
 }
-.omni-extension :-ms-input-placeholder {
+.blazex-extension :-ms-input-placeholder {
   color: var(--placeholder);
 }
-.omni-extension ::-ms-input-placeholder {
+.blazex-extension ::-ms-input-placeholder {
   color: var(--placeholder);
 }
-.omni-extension #omni-list {
+.blazex-extension #blazex-list {
   width: 100%;
   overflow: overlay;
   height: 100%;
@@ -225,18 +225,18 @@
   border-top: 1px solid var(--border);
   position: relative;
 }
-.omni-extension .omni-item {
+.blazex-extension .blazex-item {
   height: 60px;
   width: 100%;
 }
-.omni-extension .omni-item:hover {
+.blazex-extension .blazex-item:hover {
   cursor: pointer;
 }
-.omni-extension .omni-item-active {
+.blazex-extension .blazex-item-active {
   background-color: var(--select);
   position: relative;
 }
-.omni-extension .omni-item-active:before {
+.blazex-extension .blazex-item-active:before {
   height: 100%;
   position: absolute;
   display: block;
@@ -244,7 +244,7 @@
   width: 2px;
   background-color: var(--accent);
 }
-.omni-extension .omni-select {
+.blazex-extension .blazex-select {
   float: right;
   vertical-align: middle;
   color: var(--text-3);
@@ -254,13 +254,13 @@
   margin-top: 20px;
   margin-right: 5%;
 }
-.omni-extension .omni-select span {
+.blazex-extension .blazex-select span {
   margin-left: 3px;
 }
-.omni-extension .omni-item-active .omni-select {
+.blazex-extension .blazex-item-active .blazex-select {
   display: block !important;
 }
-.omni-extension .omni-icon {
+.blazex-extension .blazex-icon {
   width: 20px;
   height: 20px;
   margin-left: 5%;
@@ -268,7 +268,7 @@
   vertical-align: middle;
   margin-top: -12px;
 }
-.omni-extension .omni-emoji-action {
+.blazex-extension .blazex-emoji-action {
   display: inline-block;
   vertical-align: middle;
   margin-top: -12px;
@@ -278,13 +278,13 @@
   margin-left: 5%;
   font-size: 18px;
 }
-.omni-extension .omni-item-details {
+.blazex-extension .blazex-item-details {
   display: inline-block !important;
   margin-left: 10px;
   vertical-align: middle;
   margin-top: 10px;
 }
-.omni-extension .omni-item-name {
+.blazex-extension .blazex-item-name {
   color: var(--text-2);
   font-size: 14px;
   font-weight: 500;
@@ -293,10 +293,10 @@
   text-overflow: ellipsis;
   width: 460px;
 }
-.omni-extension .omni-item-active .omni-item-name {
+.blazex-extension .blazex-item-active .blazex-item-name {
   color: var(--text) !important;
 }
-.omni-extension .omni-item-desc {
+.blazex-extension .blazex-item-desc {
   color: var(--text-3);
   margin-top: 5px;
   font-size: 14px;
@@ -305,7 +305,7 @@
   text-overflow: ellipsis;
   width: 460px;
 }
-.omni-extension #omni-footer {
+.blazex-extension #blazex-footer {
   height: 45px;
   line-height: 45px;
   border-top: 1px solid var(--border);
@@ -313,36 +313,36 @@
   margin-left: auto;
   margin-right: auto;
 }
-.omni-extension #omni-results {
+.blazex-extension #blazex-results {
   color: var(--text-3);
   font-size: 12px;
   font-weight: 500;
   float: left;
 }
-.omni-extension #omni-arrows {
+.blazex-extension #blazex-arrows {
   color: var(--text-3);
   font-size: 12px;
   font-weight: 500;
   float: right;
 }
-.omni-extension #omni-arrows span {
+.blazex-extension #blazex-arrows span {
   margin-left: 3px;
   margin-right: 3px;
 }
-.omni-extension .omni-keys {
+.blazex-extension .blazex-keys {
   float: right;
   vertical-align: middle;
   font-weight: 500;
   margin-top: 20px;
   margin-right: 5%;
 }
-.omni-extension .omni-item-active .omni-keys {
+.blazex-extension .blazex-item-active .blazex-keys {
   display: none !important;
 }
-.omni-extension .omni-keys span {
+.blazex-extension .blazex-keys span {
   margin-left: 3px;
 }
-#omni-extension-toast {
+#blazex-extension-toast {
   text-align: center;
   font-family: Inter;
   font-weight: 500;
@@ -366,13 +366,13 @@
   transition: all 0.2s cubic-bezier(0.05, 0.03, 0.35, 1);
   z-index: 99999999;
 }
-#omni-extension-toast img {
+#blazex-extension-toast img {
   display: inline-block;
   margin-right: 5px;
   vertical-align: middle;
   margin-bottom: 2px;
 }
-.omni-show-toast {
+.blazex-show-toast {
   bottom: 20px !important;
   opacity: 1 !important;
   visibility: visible !important;
