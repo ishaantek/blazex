@@ -64,7 +64,7 @@ You can use a variety of commands with BlazeX to perform actions or filter your 
 - **/actions**: Search all available actions
 - **/remove**: Remove a bookmark or close a tab
 
-Feel free to suggest new commands for BlazeX by [making an issue](https://github.com/allaboutishaan/blazex/issues/new).
+Feel free to suggest new commands for BlazeX by [making an issue](https://github.com/ishaantek/blazex/issues/new).
 
 ## Self-hosting BlazeX
 You can run BlazeX locally without having to install it from the Chrome Store.
@@ -73,7 +73,7 @@ You can run BlazeX locally without having to install it from the Chrome Store.
 
 1. Download the code. In the web version of GitHub, you can do that by clicking the green "Code" button, and then "Download ZIP".
 2. Go to chrome://extensions/ in your browser, and [enable developer mode](https://developer.chrome.com/docs/extensions/mv2/faq/#:~:text=You%20can%20start%20by%20turning,a%20packaged%20extension%2C%20and%20more.).
-3. Drag the [src folder](https://github.com/allaboutishaan/blazex/tree/master/src) (make sure it's a folder and not a ZIP file, so unzip first), or click on the "Load unpacked" button and locate the folder.
+3. Drag the [src folder](https://github.com/ishaantek/blazex/tree/master/src) (make sure it's a folder and not a ZIP file, so unzip first), or click on the "Load unpacked" button and locate the folder.
 4. That's it, you will now be able to use BlazeX locally.
 
 ## Libraries used
@@ -83,4 +83,4 @@ You can run BlazeX locally without having to install it from the Chrome Store.
 
 #
 
-Feel free to reach out to me through email at ishaan@allaboutishaan.com or [on Twitter](https://twitter.com/allaboutishaan) if you have any questions or feedback! Hope you find this useful 💙
+Feel free to reach out to me through email at ishaan@ishaantek.com or [on Twitter](https://twitter.com/ishaantek) if you have any questions or feedback! Hope you find this useful 💙
